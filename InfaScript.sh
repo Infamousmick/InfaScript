@@ -37,8 +37,7 @@ start() {
     6. Samsung Tweaks
     7. Android Tweaks
     8. Backup Partitions
-    9. Saved WiFi Passwords
-    ${RED}10. Exit\n
+    ${RED}9. Exit\n
     ${RESET}${BLUE}#####################################${RESET}${BOLD}\n
     Enter your choice: "
     read -r choice
@@ -72,11 +71,8 @@ run_me(){
                 ;;
             8)
                 confirm_and_execute "su -c sh bin/dd.sh"
-                ;;
-            9)
-                confirm_and_execute "su -c sh bin/wifi.sh"
                 ;;            
-            10)
+            9)
                 exit_a
                 ;;
             *)
